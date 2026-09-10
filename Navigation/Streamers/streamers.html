@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streamers - CommunityGR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    .streamers-container {
+      padding: 80px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .streamers-header {
+      margin-bottom: 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .streamers-header h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: 48px;
+      font-weight: 800;
+    }
+
+    .back-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: opacity 0.3s ease;
+    }
+
+    .back-link:hover {
+      opacity: 0.8;
+    }
+
+    .category-section {
+      margin-bottom: 80px;
+    }
+
+    .category-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 32px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .streamers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .streamer-card {
+      background: var(--bg-hover);
+      padding: 24px;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .streamer-card:hover {
+      background: rgba(26, 26, 30, 0.8);
+      border: 1px solid var(--accent);
+      transform: translateY(-4px);
+    }
+
+    .streamer-avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      font-family: 'Syne', sans-serif;
+      font-size: 40px;
+      font-weight: 800;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .streamer-avatar.live::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 16px;
+      height: 16px;
+      background: #00d97e;
+      border-radius: 50%;
+      border: 2px solid var(--bg-hover);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+    }
+
+    .streamer-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .streamer-platform {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .platform-badge {
+      background: var(--accent);
+      color: #000;
+      padding: 4px 10px;
+      border-radius: 2px;
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .streamer-stats {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+
+    .stat-item {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--text-muted);
+      letter-spacing: 0.5px;
+    }
+
+    .stat-value {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 8px;
+      width: 100%;
+      margin-top: 12px;
+    }
+
+    .visit-btn {
+      flex: 1;
+      background: var(--accent);
+      color: #000;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 2px;
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+      text-decoration: none;
+      display: block;
+    }
+
+    .visit-btn:hover {
+      opacity: 0.85;
+    }
+
+    @media (max-width: 768px) {
+      .streamers-container {
+        padding: 40px 20px;
+      }
+
+      .streamers-header {
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 40px;
+      }
+
+      .streamers-header h1 {
+        font-size: 32px;
+      }
+
+      .back-link {
+        align-self: flex-start;
+      }
+
+      .streamers-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 16px;
+      }
+
+      .category-title {
+        font-size: 22px;
+        margin-bottom: 24px;
+      }
+
+      .streamer-avatar {
+        width: 80px;
+        height: 80px;
+        font-size: 32px;
+      }
+
+      .streamer-name {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .streamers-container {
+        padding: 20px;
+      }
+
+      .streamers-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .streamer-card {
+        padding: 16px;
+      }
+
+      .streamer-avatar {
+        width: 70px;
+        height: 70px;
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      Community<span class="nav-logo-gr">GR</span>
+    </div>
+    <div class="nav-middle">
+      <a href="../News/news.html" class="nav-link">News</a>
+      <a href="../Servers/servers.html" class="nav-link">Servers</a>
+      <a href="streamers.html" class="nav-link">Streamers</a>
+      <a href="../../index.html#contacts" class="nav-link">Contacts</a>
+    </div>
+    <button class="nav-cta" onclick="window.open('https://discord.gg/communityGR', '_blank')">Join Discord</button>
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" id="mobileMenuClose">&times;</button>
+    <a href="../News/news.html" class="nav-link">News</a>
+    <a href="../Servers/servers.html" class="nav-link">Servers</a>
+    <a href="streamers.html" class="nav-link">Streamers</a>
+    <a href="../../index.html#contacts" class="nav-link">Contacts</a>
+    <button class="nav-cta" onclick="window.open('https://discord.gg/communityGR', '_blank')">Join Discord</button>
+  </div>
+
+  <!-- STREAMERS CONTAINER -->
+  <div class="streamers-container" style="margin-top: 64px;">
+    <div class="streamers-header">
+      <h1>Οι Streamers μας</h1>
+      <a href="../../index.html" class="back-link">← Πίσω στο home</a>
+    </div>
+
+    <!-- FEMALE STREAMERS -->
+    <div class="category-section">
+      <h2 class="category-title">👩 Γυναικείες Streamers</h2>
+      <div class="streamers-grid">
+        <div class="streamer-card">
+          <div class="streamer-avatar">Μ</div>
+          <h3 class="streamer-name">Maria</h3>
+          <div class="streamer-platform">
+            <span class="platform-badge">YouTube</span>
+          </div>
+          <div class="streamer-stats">
+            <div class="stat-item">Followers: <span class="stat-value">12.4K</span></div>
+            <div class="stat-item">Subscribers: <span class="stat-value">8.2K</span></div>
+          </div>
+          <div class="action-buttons">
+            <a href="https://youtube.com/@maria" target="_blank" rel="noopener noreferrer" class="visit-btn">Visit</a>
+          </div>
+        </div>
+
+        <div class="streamer-card">
+          <div class="streamer-avatar">Σ</div>
+          <h3 class="streamer-name">Sophia</h3>
+          <div class="streamer-platform">
+            <span class="platform-badge">YouTube</span>
+          </div>
+          <div class="streamer-stats">
+            <div class="stat-item">Followers: <span class="stat-value">8.9K</span></div>
+            <div class="stat-item">Subscribers: <span class="stat-value">6.1K</span></div>
+          </div>
+          <div class="action-buttons">
+            <a href="https://youtube.com/@sophia" target="_blank" rel="noopener noreferrer" class="visit-btn">Visit</a>
+          </div>
+        </div>
+
+        <div class="streamer-card">
+          <div class="streamer-avatar live">Λ</div>
+          <h3 class="streamer-name">Λένα</h3>
+          <div class="streamer-platform">
+            <span class="platform-badge">Twitch</span>
+          </div>
+          <div class="streamer-stats">
+            <div class="stat-item">Followers: <span class="stat-value">5.2K</span></div>
+            <div class="stat-item">Status: <span class="stat-value">🔴 LIVE</span></div>
+          </div>
+          <div class="action-buttons">
+            <a href="https://twitch.tv/lena" target="_blank" rel="noopener noreferrer" class="visit-btn">Watch</a>
+          </div>
+        </div>
+
+        <div class="streamer-card">
+          <div class="streamer-avatar">Α</div>
+          <h3 class="streamer-name">Αντιγόνη</h3>
+          <div class="streamer-platform">
+            <span class="platform-badge">Twitch</span>
+          </div>
+          <div class="streamer-stats">
+            <div class="stat-item">Followers: <span class="stat-value">3.6K</span></div>
+            <div class="stat-item">Status: <span class="stat-value">Offline</span></div>
+          </div>
+          <div class="action-buttons">
+            <a href="https://twitch.tv/antigoni" target="_blank" rel="noopener noreferrer" class="visit-btn">Follow</a>
+          </div>
+        </div>
+
+        <div class="streamer-card">
+          <div class="streamer-avatar">Ε</div>
+          <h3 class="streamer-name">Ελένη</h3>
+          <div class="streamer-platform">
+            <span class="platform-badge">YouTube</span>
+          </div>
+          <div class="streamer-stats">
+            <div class="stat-item">Followers: <span class="stat-value">7.3K</span></div>
+            <div class="stat-item">Subscribers: <span class="stat-value">5.4K</span></div>
+          </div>
+          <div class="action-buttons">
+            <a href="https://youtube.com/@eleni" target="_blank" rel="noopener noreferrer" class="visit-btn">Visit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MALE STREAMERS -->
+    <div class="category-section">
+      <h2 class="category-title">👨 Άνδρες Streamers</h2>
+      <div class="streamers-grid">
+        <div class="streamer-card">
+          <div class="streamer-avatar live">Α</div>
+          <h3 class="streamer-name">Alexandros</h3>
+          <div class="streamer-platform">
+            <span class="platform-badge">Twitch</span>
+          </div>
+          <div class="streamer-stats">
+            <div class="stat-item">Followers: <span class="stat-value">24.8K</span></div>
+            <div class="stat-item">Status: <span class="stat-value">🔴 LIVE</span></div>
+          </div>
+          <div class="action-buttons">
+            <a href="https://twitch.tv/alexandros" target="_blank" rel="noopener noreferrer" class="visit-btn">Watch</a>
+          </div>
+        </div>
+
+        <div class="streamer-card">
+          <div class="streamer-avatar live">Δ</div>
+          <h3 class="streamer-name">Dimitri</h3>
+          <div class="streamer-platform">
+            <span class="platform-badge">Twitch</span>
+          </div>
+          <div class="streamer-stats">
+            <div class="stat-item">Followers: <span class="stat-value">18.3K</span></div>
+            <div class="stat-item">Status: <span class="stat-value">🔴 LIVE</span></div>
+          </div>
+          <div class="action-buttons">
+            <a href="https://twitch.tv/dimitri" target="_blank" rel="noopener noreferrer" class="visit-btn">Watch</a>
+          </div>
+        </div>
+
+        <div class="streamer-card">
+          <div class="streamer-avatar">Ν</div>
+          <h3 class="streamer-name">Nikos</h3>
+          <div class="streamer-platform">
+            <span class="platform-badge">Twitch</span>
+          </div>
+          <div class="streamer-stats">
+            <div class="stat-item">Followers: <span class="stat-value">14.5K</span></div>
+            <div class="stat-item">Status: <span class="stat-value">Offline</span></div>
+          </div>
+          <div class="action-buttons">
+            <a href="https://twitch.tv/nikos" target="_blank" rel="noopener noreferrer" class="visit-btn">Follow</a>
+          </div>
+        </div>
+
+        <div class="streamer-card">
+          <div class="streamer-avatar">Γ</div>
+          <h3 class="streamer-name">Giorgos</h3>
+          <div class="streamer-platform">
+            <span class="platform-badge">YouTube</span>
+          </div>
+          <div class="streamer-stats">
+            <div class="stat-item">Followers: <span class="stat-value">9.2K</span></div>
+            <div class="stat-item">Subscribers: <span class="stat-value">6.8K</span></div>
+          </div>
+          <div class="action-buttons">
+            <a href="https://youtube.com/@giorgos" target="_blank" rel="noopener noreferrer" class="visit-btn">Visit</a>
+          </div>
+        </div>
+
+        <div class="streamer-card">
+          <div class="streamer-avatar">Κ</div>
+          <h3 class="streamer-name">Κώστας</h3>
+          <div class="streamer-platform">
+            <span class="platform-badge">Twitch</span>
+          </div>
+          <div class="streamer-stats">
+            <div class="stat-item">Followers: <span class="stat-value">6.7K</span></div>
+            <div class="stat-item">Status: <span class="stat-value">Offline</span></div>
+          </div>
+          <div class="action-buttons">
+            <a href="https://twitch.tv/kostas" target="_blank" rel="noopener noreferrer" class="visit-btn">Follow</a>
+          </div>
+        </div>
+
+        <div class="streamer-card">
+          <div class="streamer-avatar">Π</div>
+          <h3 class="streamer-name">Παναγιώτης</h3>
+          <div class="streamer-platform">
+            <span class="platform-badge">YouTube</span>
+          </div>
+          <div class="streamer-stats">
+            <div class="stat-item">Followers: <span class="stat-value">11.2K</span></div>
+            <div class="stat-item">Subscribers: <span class="stat-value">8.5K</span></div>
+          </div>
+          <div class="action-buttons">
+            <a href="https://youtube.com/@panagiotis" target="_blank" rel="noopener noreferrer"
+              class="visit-btn">Visit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      if (scrollTop > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.add('active');
+    });
+
+    mobileMenuClose.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+    });
+
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+      });
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === mobileMenu) {
+        mobileMenu.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+
+</html>

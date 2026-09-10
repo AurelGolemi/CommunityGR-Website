@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CommunityGR - Ελληνική Gaming Κοινότητα</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      Community<span class="nav-logo-gr">GR</span>
+    </div>
+    <div class="nav-middle">
+      <a href="Navigation/News/news.html" class="nav-link">News</a>
+      <a href="Navigation/Servers/servers.html" class="nav-link">Servers</a>
+      <a href="Navigation/Streamers/streamers.html" class="nav-link">Streamers</a>
+      <a href="#contacts" class="nav-link">Contacts</a>
+    </div>
+    <button class="nav-cta" onclick="window.open('https://discord.gg/communityGR', '_blank')">Join Discord</button>
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" id="mobileMenuClose">&times;</button>
+    <a href="Navigation/News/news.html" class="nav-link">News</a>
+    <a href="Navigation/Servers/servers.html" class="nav-link">Servers</a>
+    <a href="Navigation/Streamers/streamers.html" class="nav-link">Streamers</a>
+    <a href="#contacts" class="nav-link">Contacts</a>
+    <button class="nav-cta" onclick="window.open('https://discord.gg/communityGR', '_blank')">Join Discord</button>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-eyebrow">GREEK GAMING COMMUNITY</div>
+      <h1 class="hero-title">
+        Καλωσήρθες στο <span class="hero-title-cyan">CommunityGR</span>
+      </h1>
+      <p class="hero-subtitle">
+        Η μεγαλύτερη Ελληνική gaming κοινότητα. Βρες servers, streamers, και συνδέσου με χιλιάδες Έλληνες gamers.
+      </p>
+      <div class="hero-cta-group">
+        <button class="cta-primary" onclick="window.open('https://discord.gg/communityGR', '_blank')">Join
+          Discord</button>
+        <a href="Navigation/Servers/servers.html" class="cta-ghost">Browse Servers →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-number">50K+</div>
+          <div class="stat-label">MEMBERS</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">120+</div>
+          <div class="stat-label">SERVERS</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">ACTIVE</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS SECTION -->
+  <section id="news">
+    <h2 class="section-title">Τελευταία Νέα</h2>
+    <div class="news-wrapper">
+      <div class="news-list">
+        <div class="news-item">
+          <div class="news-date">5 Απριλίου 2025</div>
+          <h3 class="news-headline">Νέα FiveM Server: Olympus RP</h3>
+          <p class="news-desc">Ξεκίνησε το πιο hot FiveM server με economy system και custom jobs. Χίλιες θέσεις,
+            κανένας περιορισμός.</p>
+        </div>
+        <div class="news-item">
+          <div class="news-date">2 Απριλίου 2025</div>
+          <h3 class="news-headline">Community Event: Gaming Tournament</h3>
+          <p class="news-desc">Συμμετέχουν 200+ παίκτες στο ετήσιο gaming tournament. Δείτε τα αποτελέσματα και τα
+            highlights.</p>
+        </div>
+        <div class="news-item">
+          <div class="news-date">28 Μαρτίου 2025</div>
+          <h3 class="news-headline">New Streamer Program Launch</h3>
+          <p class="news-desc">Ο νέος streamer program του CommunityGR δίνει αποδοχές και special benefits σε όλους τους
+            content creators.</p>
+        </div>
+      </div>
+      <div class="news-visual">
+        ∴ Editorial Visual Content
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVERS PREVIEW SECTION -->
+  <section>
+    <h2 class="section-title">Βρες τον Server σου</h2>
+    <div class="servers-preview">
+      <div class="server-row">
+        <div class="server-info">
+          <h3 class="server-title">FiveM Servers</h3>
+          <p class="server-desc">Οι καλύτερες ελληνικές FiveM κοινότητες με economy, RP και βαθύ gameplay.</p>
+        </div>
+        <div class="server-meta">
+          <span class="player-count">2.4K ACTIVE</span>
+          <a href="Navigation/Servers/servers.html" class="server-cta">Δες Servers →</a>
+        </div>
+      </div>
+      <div class="server-row">
+        <div class="server-info">
+          <h3 class="server-title">RedM Servers</h3>
+          <p class="server-desc">Western roleplay στο Red Dead Redemption 2. Authentic environments, historical
+            accuracy, immersive economy.</p>
+        </div>
+        <div class="server-meta">
+          <span class="player-count">1.8K ACTIVE</span>
+          <a href="Navigation/Servers/servers.html" class="server-cta">Δες Servers →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STREAMERS SECTION -->
+  <section id="streamers">
+    <h2 class="section-title">Οι Streamers μας</h2>
+    <div class="streamers-scroll">
+      <div class="streamer-card">
+        <div class="streamer-avatar">Α</div>
+        <h4 class="streamer-name">Alexandros</h4>
+        <div class="streamer-platform">
+          <span class="platform-badge">Twitch</span>
+          <span class="live-dot"></span>
+        </div>
+      </div>
+      <div class="streamer-card">
+        <div class="streamer-avatar">Μ</div>
+        <h4 class="streamer-name">Maria</h4>
+        <div class="streamer-platform">
+          <span class="platform-badge">YouTube</span>
+        </div>
+      </div>
+      <div class="streamer-card">
+        <div class="streamer-avatar">Δ</div>
+        <h4 class="streamer-name">Dimitri</h4>
+        <div class="streamer-platform">
+          <span class="platform-badge">Twitch</span>
+          <span class="live-dot"></span>
+        </div>
+      </div>
+      <div class="streamer-card">
+        <div class="streamer-avatar">Σ</div>
+        <h4 class="streamer-name">Sophia</h4>
+        <div class="streamer-platform">
+          <span class="platform-badge">YouTube</span>
+        </div>
+      </div>
+      <div class="streamer-card">
+        <div class="streamer-avatar">Ν</div>
+        <h4 class="streamer-name">Nikos</h4>
+        <div class="streamer-platform">
+          <span class="platform-badge">Twitch</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS SECTION -->
+  <section id="contacts">
+    <div class="contacts-wrapper">
+      <h2 class="section-title">Επικοινωνία</h2>
+      <div class="contact-rows">
+        <a href="https://discord.gg/communityGR" target="_blank" rel="noopener noreferrer" class="contact-row">
+          <div class="contact-method">
+            <div class="contact-label">Discord Server</div>
+            <div class="contact-value">Έλληνες Gamers Community</div>
+          </div>
+          <div class="contact-icon">→</div>
+        </a>
+        <a href="mailto:info@communitygr.gr" class="contact-row">
+          <div class="contact-method">
+            <div class="contact-label">Email</div>
+            <div class="contact-value">info@communitygr.gr</div>
+          </div>
+          <div class="contact-icon">→</div>
+        </a>
+      </div>
+      <div class="social-icons">
+        <a href="https://discord.gg/communityGR" target="_blank" rel="noopener noreferrer" class="social-icon"
+          title="Discord">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M20.317 4.3671a19.8062 19.8062 0 00-4.885-1.515.0741.0741 0 00-.0785.0371c-.211.3755-.445.8625-.608 1.25a18.27 18.27 0 00-5.487 0c-.163-.3875-.397-.8745-.609-1.25a.077.077 0 00-.0785-.037 19.7355 19.7355 0 00-4.885 1.515.0699.0699 0 00-.0321.0277C1.75 8.068 1.1273 11.7829 2.67 15.338a.082.082 0 00.0315.0553c1.6055.7736 3.1558 1.244 4.6797 1.555a.083.083 0 00.0911-.0288c.461-.597.872-1.2288 1.22-1.884a.08.08 0 00-.044-.111 13.07 13.07 0 01-1.872-.892.083.083 0 01-.008-.138c.126-.094.252-.192.372-.291a.083.083 0 01.086-.01c3.928 1.793 8.18 1.793 12.062 0a.083.083 0 01.086.009c.12.099.246.198.373.292a.083.083 0 01-.006.137 12.2 12.2 0 01-1.873.892.084.084 0 00-.043.111c.35.656.762 1.288 1.22 1.884a.083.083 0 00.09.028 19.04 19.04 0 004.68-1.555.083.083 0 00.031-.055c1.624-3.787 1.084-7.081 -1.029-10.5a.083.083 0 00-.031-.028zM8.3 13.669c-.915 0-1.67-.838-1.67-1.864 0-1.026.738-1.864 1.67-1.864.935 0 1.683.839 1.67 1.864 0 1.026-.738 1.864-1.67 1.864zm7.4 0c-.916 0-1.671-.838-1.671-1.864 0-1.026.738-1.864 1.671-1.864.935 0 1.683.839 1.671 1.864 0 1.026-.736 1.864-1.671 1.864z" />
+          </svg>
+        </a>
+        <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer" class="social-icon" title="Twitch">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M11.571 4.714h1.429v3.428h-1.429V4.714zM15.571 5.143c-.406 0-.857.286-1.143.571v3.857c0 .286.286.571.571.857h1.143v1.143c0 .571.571 1.143 1.143 1.143.571 0 1.143-.572 1.143-1.143v-1.143c.286 0 .857-.286 1.143-.857.286-.286.286-.857.286-1.143V5.714c0-.571-.571-1.143-1.143-1.143h-2.286v-.428zm-11.43 1.429c-.571 0-1.143.571-1.143 1.143v8c0 .571.572 1.143 1.143 1.143h9.714v-1.143H5.143V6.286h8.572V5.143H4.141zm13.714 0c-.286 0-.571.286-.857.857-.286.571-.857.857-1.143.857-.571 0-1.143-.286-1.143-.857v-.857h-1.143v3.857c0 .286.286.571.571.857h1.143v.286c0 .286.286.571.571.857.286.286.857.286 1.143.286.286 0 .857 0 1.143-.286.286-.286.286-.571.286-.857v-1.143c0-.286-.286-.571-.571-.857.286-.286.571-.857.571-1.143z" />
+          </svg>
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="YouTube">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+        </a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="TikTok">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.68v13.67a2.89 2.89 0 1 1-5.92-2.47 2.88 2.88 0 0 1 2.96 2.59H9.4a6.49 6.49 0 0 1-13.07-4.1v3.02A9.43 9.43 0 0 0 9.46 17.9a6.46 6.46 0 0 1 .49-10.1 5.7 5.7 0 0 1 .35-1.11z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+      CommunityGR © 2025
+    </div>
+    <div class="footer-right">
+      <a href="https://discord.gg/communityGR" target="_blank" rel="noopener noreferrer" class="footer-icon"
+        title="Discord">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M20.317 4.3671a19.8062 19.8062 0 00-4.885-1.515.0741.0741 0 00-.0785.0371c-.211.3755-.445.8625-.608 1.25a18.27 18.27 0 00-5.487 0c-.163-.3875-.397-.8745-.609-1.25a.077.077 0 00-.0785-.037 19.7355 19.7355 0 00-4.885 1.515.0699.0699 0 00-.0321.0277C1.75 8.068 1.1273 11.7829 2.67 15.338a.082.082 0 00.0315.0553c1.6055.7736 3.1558 1.244 4.6797 1.555a.083.083 0 00.0911-.0288c.461-.597.872-1.2288 1.22-1.884a.08.08 0 00-.044-.111 13.07 13.07 0 01-1.872-.892.083.083 0 01-.008-.138c.126-.094.252-.192.372-.291a.083.083 0 01.086-.01c3.928 1.793 8.18 1.793 12.062 0a.083.083 0 01.086.009c.12.099.246.198.373.292a.083.083 0 01-.006.137 12.2 12.2 0 01-1.873.892.084.084 0 00-.043.111c.35.656.762 1.288 1.22 1.884a.083.083 0 00.09.028 19.04 19.04 0 004.68-1.555.083.083 0 00.031-.055c1.624-3.787 1.084-7.081 -1.029-10.5a.083.083 0 00-.031-.028zM8.3 13.669c-.915 0-1.67-.838-1.67-1.864 0-1.026.738-1.864 1.67-1.864.935 0 1.683.839 1.67 1.864 0 1.026-.738 1.864-1.67 1.864zm7.4 0c-.916 0-1.671-.838-1.671-1.864 0-1.026.738-1.864 1.671-1.864.935 0 1.683.839 1.671 1.864 0 1.026-.736 1.864-1.671 1.864z" />
+        </svg>
+      </a>
+      <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer" class="footer-icon" title="Twitch">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M11.571 4.714h1.429v3.428h-1.429V4.714zM15.571 5.143c-.406 0-.857.286-1.143.571v3.857c0 .286.286.571.571.857h1.143v1.143c0 .571.571 1.143 1.143 1.143.571 0 1.143-.572 1.143-1.143v-1.143c.286 0 .857-.286 1.143-.857.286-.286.286-.857.286-1.143V5.714c0-.571-.571-1.143-1.143-1.143h-2.286v-.428zm-11.43 1.429c-.571 0-1.143.571-1.143 1.143v8c0 .571.572 1.143 1.143 1.143h9.714v-1.143H5.143V6.286h8.572V5.143H4.141zm13.714 0c-.286 0-.571.286-.857.857-.286.571-.857.857-1.143.857-.571 0-1.143-.286-1.143-.857v-.857h-1.143v3.857c0 .286.286.571.571.857h1.143v.286c0 .286.286.571.571.857.286.286.857.286 1.143.286.286 0 .857 0 1.143-.286.286-.286.286-.571.286-.857v-1.143c0-.286-.286-.571-.571-.857.286-.286.571-.857.571-1.143z" />
+        </svg>
+      </a>
+      <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-icon" title="YouTube">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+        </svg>
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-icon" title="Instagram">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0m5.894 7.8c.004.082.006.162.006.242 0 2.448-1.868 5.273-5.273 5.273-1.047 0-2.022-.306-2.847-.834.145.017.293.026.443.026 1.735 0 3.332-.592 4.596-1.584-1.621-.03-2.984-1.1-3.455-2.573.226.043.458.066.695.066.337 0 .665-.045.977-.128-1.695-.341-2.97-1.838-2.97-3.637v-.046c.499.277 1.071.443 1.684.462-.995-.665-1.65-1.804-1.65-3.094 0-.681.183-1.319.503-1.869 1.823 2.239 4.548 3.709 7.607 3.863-.063-.268-.096-.546-.096-.832 0-2.01 1.631-3.641 3.641-3.641 1.047 0 1.991.441 2.655 1.149.828-.163 1.607-.465 2.31-.88-.272.85-.847 1.563-1.598 2.016.736-.089 1.44-.283 2.092-.572-.487.731-1.102 1.373-1.81 1.891z" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
