@@ -276,7 +276,8 @@
       <a href="../../index.html#contacts" class="nav-link">Contacts</a>
     </div>
     <button class="nav-cta" onclick="window.open('https://discord.gg/communityGR', '_blank')">Join Discord</button>
-    <button class="hamburger" id="hamburger">
+    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false"
+      aria-controls="mobileMenu">
       <span></span>
       <span></span>
       <span></span>
@@ -496,23 +497,42 @@
     const mobileMenu = document.getElementById('mobileMenu');
     const mobileMenuClose = document.getElementById('mobileMenuClose');
 
+    const mobileViewport = window.matchMedia('(max-width: 768px)');
+
+    const setMobileMenuState = (isOpen) => {
+      mobileMenu.classList.toggle('active', isOpen);
+      hamburger.classList.toggle('is-open', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+      hamburger.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    };
+
     hamburger.addEventListener('click', () => {
-      mobileMenu.classList.add('active');
+      if (mobileViewport.matches) {
+        setMobileMenuState(!mobileMenu.classList.contains('active'));
+      }
     });
 
     mobileMenuClose.addEventListener('click', () => {
-      mobileMenu.classList.remove('active');
+      if (mobileViewport.matches) {
+        setMobileMenuState(false);
+      }
     });
 
     document.querySelectorAll('.mobile-menu a').forEach(link => {
       link.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
+        setMobileMenuState(false);
       });
     });
 
     window.addEventListener('click', (e) => {
       if (e.target === mobileMenu) {
-        mobileMenu.classList.remove('active');
+        setMobileMenuState(false);
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (!mobileViewport.matches) {
+        setMobileMenuState(false);
       }
     });
   </script>
