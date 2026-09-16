@@ -1,117 +1,117 @@
 // Channel data
 const channelData = {
+  // "fivem-servers": {
+  //   title: "FiveM Servers",
+  //   meta: "Ελληνικές FiveM κοινότητες – 2.4K ACTIVE",
+  //   type: "grid-server",
+  //   content: [
+  //     {
+  //       name: "Olympus RP",
+  //       image: [
+  //         {
+  //           type: "image",
+  //           url: "https://cdn.discordapp.com/emojis/1489802177965854730.png",
+  //         },
+  //       ],
+  //       tags: "[RP] [Economy] [Serious]",
+  //       players: "1,240 / 1,500",
+  //       link: "https://discord.gg/olympusrp",
+  //     },
+  //     {
+  //       name: "Athens Streets",
+  //       image: [
+  //         {
+  //           type: "image",
+  //           url: "https://cdn.discordapp.com/emojis/1461249000500891820.png",
+  //         }
+  //       ],
+  //       tags: "[RP] [Casual] [Drift]",
+  //       players: "856 / 1,000",
+  //       link: "https://discord.gg/athensstreets",
+  //     },
+  //     {
+  //       name: "Hellas Underground",
+  //       image: [
+  //         {
+  //           type: "image",
+  //           url: "https://cdn.discordapp.com/emojis/1461249063071518894.png",
+  //         }
+  //       ],
+  //       tags: "[RP] [Gang] [Economy]",
+  //       players: "423 / 500",
+  //       link: "https://discord.gg/hellasunderground",
+  //     },
+  //     {
+  //       name: "Sparta Survival",
+  //       image: "../../Images/sparta-survival-logo.webp",
+  //       tags: "[Survival] [Hardcore] [PvP]",
+  //       players: "212 / 256",
+  //       link: "https://discord.gg/spartasurvival",
+  //     },
+  //     {
+  //       name: "Nafplio RP",
+  //       image: [
+  //         {
+  //           type: "image",
+  //           url: "https://cdn.discordapp.com/emojis/1461249186182987952.png",
+  //         }
+  //       ],
+  //       tags: "[RP] [Economy] [Cop]",
+  //       players: "678 / 800",
+  //       link: "https://discord.gg/nafpliorp",
+  //     },
+  //     {
+  //       name: "Hellenic Center",
+  //       image: [
+  //         {
+  //           type: "image",
+  //           url: "https://cdn.discordapp.com/emojis/1461249276331163881.png",
+  //         }
+  //       ],
+  //       tags: "[RP] [News] [Media]",
+  //       players: "340 / 400",
+  //       link: "https://discord.gg/helleniccentergr",
+  //     },
+  //     {
+  //       name: "Athenian Nights",
+  //       image: [
+  //         {
+  //           type: "image",
+  //           url: "https://cdn.discordapp.com/emojis/1461249404030681170.png",
+  //         }
+  //       ],
+  //       tags: "[RP] [Casino] [Business]",
+  //       players: "521 / 650",
+  //       link: "https://discord.gg/atheniansnights",
+  //     },
+  //     {
+  //       name: "Urban Legends",
+  //       image: [
+  //         {
+  //           type: "image",
+  //           url: "https://cdn.discordapp.com/emojis/1461249523941642355.png",
+  //         }
+  //       ],
+  //       tags: "[RP] [Story] [Events]",
+  //       players: "289 / 350",
+  //       link: "https://discord.gg/urbanlegends",
+  //     },
+  //     {
+  //       name: "Peloponnese RP",
+  //       image: [
+  //         {
+  //           type: "image",
+  //           url: "https://cdn.discordapp.com/emojis/1461249598252126390.png",
+  //         }
+  //       ],
+  //       tags: "[RP] [Rural] [Survival]",
+  //       players: "167 / 200",
+  //       link: "https://discord.gg/peloponnese",
+  //     },
+  //   ],
+  // },
   "fivem-servers": {
-    title: "FiveM Servers",
-    meta: "Ελληνικές FiveM κοινότητες – 2.4K ACTIVE",
-    type: "grid-server",
-    content: [
-      {
-        name: "Olympus RP",
-        image: [
-          {
-            type: "image",
-            url: "https://cdn.discordapp.com/emojis/1489802177965854730.png",
-          },
-        ],
-        tags: "[RP] [Economy] [Serious]",
-        players: "1,240 / 1,500",
-        link: "https://discord.gg/olympusrp",
-      },
-      {
-        name: "Athens Streets",
-        image: [
-          {
-            type: "image",
-            url: "https://cdn.discordapp.com/emojis/1461249000500891820.png",
-          }
-        ],
-        tags: "[RP] [Casual] [Drift]",
-        players: "856 / 1,000",
-        link: "https://discord.gg/athensstreets",
-      },
-      {
-        name: "Hellas Underground",
-        image: [
-          {
-            type: "image",
-            url: "https://cdn.discordapp.com/emojis/1461249063071518894.png",
-          }
-        ],
-        tags: "[RP] [Gang] [Economy]",
-        players: "423 / 500",
-        link: "https://discord.gg/hellasunderground",
-      },
-      {
-        name: "Sparta Survival",
-        image: "../../Images/sparta-survival-logo.webp",
-        tags: "[Survival] [Hardcore] [PvP]",
-        players: "212 / 256",
-        link: "https://discord.gg/spartasurvival",
-      },
-      {
-        name: "Nafplio RP",
-        image: [
-          {
-            type: "image",
-            url: "https://cdn.discordapp.com/emojis/1461249186182987952.png",
-          }
-        ],
-        tags: "[RP] [Economy] [Cop]",
-        players: "678 / 800",
-        link: "https://discord.gg/nafpliorp",
-      },
-      {
-        name: "Hellenic Center",
-        image: [
-          {
-            type: "image",
-            url: "https://cdn.discordapp.com/emojis/1461249276331163881.png",
-          }
-        ],
-        tags: "[RP] [News] [Media]",
-        players: "340 / 400",
-        link: "https://discord.gg/helleniccentergr",
-      },
-      {
-        name: "Athenian Nights",
-        image: [
-          {
-            type: "image",
-            url: "https://cdn.discordapp.com/emojis/1461249404030681170.png",
-          }
-        ],
-        tags: "[RP] [Casino] [Business]",
-        players: "521 / 650",
-        link: "https://discord.gg/atheniansnights",
-      },
-      {
-        name: "Urban Legends",
-        image: [
-          {
-            type: "image",
-            url: "https://cdn.discordapp.com/emojis/1461249523941642355.png",
-          }
-        ],
-        tags: "[RP] [Story] [Events]",
-        players: "289 / 350",
-        link: "https://discord.gg/urbanlegends",
-      },
-      {
-        name: "Peloponnese RP",
-        image: [
-          {
-            type: "image",
-            url: "https://cdn.discordapp.com/emojis/1461249598252126390.png",
-          }
-        ],
-        tags: "[RP] [Rural] [Survival]",
-        players: "167 / 200",
-        link: "https://discord.gg/peloponnese",
-      },
-    ],
-  },
-  "fivem-discord": {
-    title: "FiveM Discord Communities",
+    title: "FiveM Server Communities",
     meta: "FiveM Συζήτηση και Συνδέσεις",
     type: "grid-community",
     content: [
@@ -150,114 +150,6 @@ const channelData = {
         image: "../../Images/voodoo_official_logo.webp",
         members: "8,920 Members",
         link: "https://discord.gg/voodooofficial",
-      },
-    ],
-  },
-  "redm-servers": {
-    title: "RedM Servers",
-    meta: "Western Roleplay Κοινότητες – 1.8K ACTIVE",
-    type: "grid-server",
-    content: [
-      {
-        name: "Makedonia RedM",
-        tags: "[RP] [Economy] [Historic]",
-        players: "456 / 600",
-        link: "https://discord.gg/makedoniaredm",
-      },
-      {
-        name: "West Life RP",
-        image: "../../Images/west-life-roleplay-logo.webp",
-        tags: "[RP] [PvP] [Faction]",
-        players: "678 / 800",
-        link: "https://discord.gg/raVZwbx5Qm",
-      },
-      {
-        name: "High Noon RP",
-        image: "../../Images/high-noon-rp-logo.webp",
-        tags: "[RP] [Outlaw] [Bounty]",
-        players: "234 / 300",
-        link: "https://discord.gg/26N4FmxpKT",
-      },
-      {
-        name: "Daisy Town Roleplay",
-        image: "../../Images/daisy-town-roleplay-logo.png",
-        tags: "[RP] [Gang] [Bounty]",
-        players: "312 / 400",
-        link: "https://discord.gg/26N4FmxpKT",
-      },
-      {
-        name: "Athens Western",
-        tags: "[RP] [Town] [Economy]",
-        players: "198 / 250",
-        link: "https://discord.gg/athenswestern",
-      },
-      {
-        name: "Spartan Desert",
-        tags: "[RP] [Survival] [PvP]",
-        players: "87 / 150",
-        link: "https://discord.gg/spartandesert",
-      },
-      {
-        name: "Golden Age RP",
-        tags: "[RP] [Gold] [Explorer]",
-        players: "423 / 500",
-        link: "https://discord.gg/goldenagedm",
-      },
-      {
-        name: "Savage Lands II",
-        image: "../../Images/savage_lands_rp_logo.png",
-        tags: "[RP] [Heritage] [Story]",
-        players: "156 / 200",
-        link: "https://discord.gg/gkvtGssuhc",
-      },
-      {
-        name: "The Outpost",
-        image: "../../Images/outpost_1899_logo.webp",
-        tags: "[RP] [Trade] [Quest]",
-        players: "289 / 350",
-        link: "https://discord.gg/j7bMes8a2q",
-      },
-    ],
-  },
-  "redm-discord": {
-    title: "RedM Discord Communities",
-    meta: "RedM Συζήτηση και Ανταλλαγή",
-    type: "grid-community",
-    content: [
-      {
-        name: "West Life RP",
-        image: "../../Images/west-life-roleplay-logo.webp",
-        tags: "[RP] [PvP] [Faction]",
-        players: "678 / 800",
-        link: "https://discord.gg/raVZwbx5Qm",
-      },
-      {
-        name: "High Noon RP",
-        image: "../../Images/high-noon-rp-logo.webp",
-        tags: "[RP] [Outlaw] [Bounty]",
-        players: "234 / 300",
-        link: "https://discord.gg/26N4FmxpKT",
-      },
-      {
-        name: "Daisy Town Roleplay",
-        image: "../../Images/daisy-town-roleplay-logo.png",
-        tags: "[RP] [Gang] [Bounty]",
-        players: "312 / 400",
-        link: "https://discord.gg/26N4FmxpKT",
-      },
-      {
-        name: "Savage Lands II",
-        image: "../../Images/savage_lands_rp_logo.png",
-        tags: "[RP] [Heritage] [Story]",
-        players: "156 / 200",
-        link: "https://discord.gg/gkvtGssuhc",
-      },
-      {
-        name: "The Outpost",
-        image: "../../Images/outpost_1899_logo.webp",
-        tags: "[RP] [Trade] [Quest]",
-        players: "289 / 350",
-        link: "https://discord.gg/j7bMes8a2q",
       },
     ],
   },
