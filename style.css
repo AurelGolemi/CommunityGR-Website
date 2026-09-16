@@ -60,6 +60,8 @@ nav.scrolled {
   display: flex;
   align-items: center;
   gap: 4px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .nav-logo-gr {
