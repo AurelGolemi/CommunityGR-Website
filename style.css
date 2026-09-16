@@ -185,7 +185,8 @@ nav.scrolled {
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 24px;
+  margin-bottom: 2px;
+  margin-top: 24px;
   font-weight: 500;
 }
 
