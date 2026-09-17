@@ -1,115 +1,5 @@
 // Channel data
 const channelData = {
-  // "fivem-servers": {
-  //   title: "FiveM Servers",
-  //   meta: "Ελληνικές FiveM κοινότητες – 2.4K ACTIVE",
-  //   type: "grid-server",
-  //   content: [
-  //     {
-  //       name: "Olympus RP",
-  //       image: [
-  //         {
-  //           type: "image",
-  //           url: "https://cdn.discordapp.com/emojis/1489802177965854730.png",
-  //         },
-  //       ],
-  //       tags: "[RP] [Economy] [Serious]",
-  //       players: "1,240 / 1,500",
-  //       link: "https://discord.gg/olympusrp",
-  //     },
-  //     {
-  //       name: "Athens Streets",
-  //       image: [
-  //         {
-  //           type: "image",
-  //           url: "https://cdn.discordapp.com/emojis/1461249000500891820.png",
-  //         }
-  //       ],
-  //       tags: "[RP] [Casual] [Drift]",
-  //       players: "856 / 1,000",
-  //       link: "https://discord.gg/athensstreets",
-  //     },
-  //     {
-  //       name: "Hellas Underground",
-  //       image: [
-  //         {
-  //           type: "image",
-  //           url: "https://cdn.discordapp.com/emojis/1461249063071518894.png",
-  //         }
-  //       ],
-  //       tags: "[RP] [Gang] [Economy]",
-  //       players: "423 / 500",
-  //       link: "https://discord.gg/hellasunderground",
-  //     },
-  //     {
-  //       name: "Sparta Survival",
-  //       image: "../../Images/sparta-survival-logo.webp",
-  //       tags: "[Survival] [Hardcore] [PvP]",
-  //       players: "212 / 256",
-  //       link: "https://discord.gg/spartasurvival",
-  //     },
-  //     {
-  //       name: "Nafplio RP",
-  //       image: [
-  //         {
-  //           type: "image",
-  //           url: "https://cdn.discordapp.com/emojis/1461249186182987952.png",
-  //         }
-  //       ],
-  //       tags: "[RP] [Economy] [Cop]",
-  //       players: "678 / 800",
-  //       link: "https://discord.gg/nafpliorp",
-  //     },
-  //     {
-  //       name: "Hellenic Center",
-  //       image: [
-  //         {
-  //           type: "image",
-  //           url: "https://cdn.discordapp.com/emojis/1461249276331163881.png",
-  //         }
-  //       ],
-  //       tags: "[RP] [News] [Media]",
-  //       players: "340 / 400",
-  //       link: "https://discord.gg/helleniccentergr",
-  //     },
-  //     {
-  //       name: "Athenian Nights",
-  //       image: [
-  //         {
-  //           type: "image",
-  //           url: "https://cdn.discordapp.com/emojis/1461249404030681170.png",
-  //         }
-  //       ],
-  //       tags: "[RP] [Casino] [Business]",
-  //       players: "521 / 650",
-  //       link: "https://discord.gg/atheniansnights",
-  //     },
-  //     {
-  //       name: "Urban Legends",
-  //       image: [
-  //         {
-  //           type: "image",
-  //           url: "https://cdn.discordapp.com/emojis/1461249523941642355.png",
-  //         }
-  //       ],
-  //       tags: "[RP] [Story] [Events]",
-  //       players: "289 / 350",
-  //       link: "https://discord.gg/urbanlegends",
-  //     },
-  //     {
-  //       name: "Peloponnese RP",
-  //       image: [
-  //         {
-  //           type: "image",
-  //           url: "https://cdn.discordapp.com/emojis/1461249598252126390.png",
-  //         }
-  //       ],
-  //       tags: "[RP] [Rural] [Survival]",
-  //       players: "167 / 200",
-  //       link: "https://discord.gg/peloponnese",
-  //     },
-  //   ],
-  // },
   "fivem-servers": {
     title: "FiveM Server Communities",
     meta: "FiveM Συζήτηση και Συνδέσεις",
@@ -117,39 +7,117 @@ const channelData = {
     content: [
       {
         name: "CommunityGR Team",
-        image: "../../Images/community_gr_logo.webp",
+        image: "../../Images/discord_server_logos/community_gr_logo.webp",
         members: "15,240 Members",
-        link: "https://discord.gg/communityGR",
+        link: "https://discord.com/invite/RTa2GsqWBu?fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAaerjPEniW7eONDeOdFVOXUEyihHQu_g6jeMUl3bES6_EmfeO58uPYrrsif-_w_aem_T1N7ea26QIYCK8hLxETdoQ",
       },
       {
-        name: "Greek Mafia Masters",
-        image: "../../Images/greek_mafia_masters_logo.gif",
-        members: "2,340 Members",
-        link: "https://discord.gg/greekmafiamasters",
+        name: "Emerald Roleplay",
+        image: "../../Images/discord_server_logos/emerald_roleplay_logo.webp",
+        members: "43,160+ Members",
+        link: "https://discord.gg/emeraldroleplay",
       },
       {
         name: "Diamond RP Greece",
-        image: "../../Images/diamond_roleplay_logo.webp",
-        members: "8,920 Members",
+        image: "../../Images/discord_server_logos/diamond_roleplay_logo.webp",
+        members: "18,920+ Members",
         link: "https://discord.gg/diamondroleplay",
       },
       {
         name: "Most Wanted",
-        image: "../../Images/most_wanted_logo.webp",
-        members: "8,920 Members",
-        link: "https://discord.gg/E3QZpB2rt2",
+        image: "../../Images/discord_server_logos/most_wanted_logo.webp",
+        members: "8,920+ Members",
+        link: "https://discord.gg/zH9ZmHxHaF",
+      },
+      {
+        name: "Quest Roleplay",
+        image: "../../Images/discord_server_logos/quest_roleplay_logo.webp",
+        members: "16,470+ Members",
+        link: "https://discord.gg/qrpv4",
+      },
+      {
+        name: "Greek Mafia Masters",
+        image: "../../Images/discord_server_logos/greek_mafia_masters_logo.gif",
+        members: "33,740+ Members",
+        link: "https://discord.gg/greekmafia",
       },
       {
         name: "2K25 Roleplay",
-        image: "../../Images/2k25_roleplay_logo.webp",
-        members: "8,920 Members",
-        link: "https://discord.gg/2k25roleplay",
+        image: "../../Images/discord_server_logos/2k25_roleplay_logo.webp",
+        members: "7,190+ Members",
+        link: "https://discord.gg/2k25rp",
       },
       {
         name: "Voodoo Official",
-        image: "../../Images/voodoo_official_logo.webp",
-        members: "8,920 Members",
-        link: "https://discord.gg/voodooofficial",
+        image: "../../Images/discord_server_logos/voodoo_official_logo.webp",
+        members: "8,920+ Members",
+        link: "https://discord.gg/voodooofficial2026",
+      },
+      {
+        name: "Reverse Roleplay",
+        image: "../../Images/discord_server_logos/reverse_roleplay_logo.webp",
+        members: "17,330+ Members",
+        link: "https://discord.gg/reverseroleplay",
+      },
+      {
+        name: "Paradox Roleplay",
+        image: "../../Images/discord_server_logos/paradox_rp_logo.webp",
+        members: "14,100+ Members",
+        link: "https://discord.gg/paradox-roleplay-797104090877919262",
+      },
+      {
+        name: "ExileV Survival",
+        image: "../../Images/discord_server_logos/exile_v_roleplay_logo.webp",
+        members: "14,100+ Members",
+        link: "https://discord.gg/WrqhgTkRKp",
+      },
+      {
+        name: "Greek Fear Roleplay",
+        image: "../../Images/discord_server_logos/greek_fear_roleplay_logo.gif",
+        members: "11,930+ Members",
+        link: "https://discord.gg/9TQaGQKTuK",
+      },
+      {
+        name: "Infinity Gaming Network",
+        image: "../../Images/discord_server_logos/infinity_gaming_network_logo.gif",
+        members: "9,910+ Members",
+        link: "https://discord.gg/projectinfinity",
+      },
+      {
+        name: "New Generation Roleplay",
+        image: "../../Images/discord_server_logos/new_generation_roleplay.webp",
+        members: "23,950+ Members",
+        link: "https://discord.gg/new-generation-roleplay-591340289323565076",
+      },
+      {
+        name: "Dangerous City Legacy",
+        image: "../../Images/discord_server_logos/dangerous_city_legacy_logo.webp",
+        members: "19,010+ Members",
+        link: "https://discord.gg/dangerous-city-legacy-828394737664000030",
+      },
+      {
+        name: "Melody Roleplay V2",
+        image: "../../Images/discord_server_logos/melody_roleplay_logo.webp",
+        members: "9,560+ Members",
+        link: "https://discord.gg/melodyroleplay",
+      },
+      {
+        name: "Metropolis Roleplay",
+        image: "../../Images/discord_server_logos/metropolis_roleplay_logo.webp",
+        members: "3,770+ Members",
+        link: "https://discord.gg/metropolisrp",
+      },
+      {
+        name: "Labubu Roleplay",
+        image: "../../Images/discord_server_logos/labubu_roleplay_logo.webp",
+        members: "7,310+ Members",
+        link: "https://discord.gg/labubu-roleplay-1492443381777961151",
+      },
+      {
+        name: "Chicago Streets RP",
+        image: "../../Images/discord_server_logos/chicago_streets_rp_logo.webp",
+        members: "230+ Members",
+        link: "https://discord.gg/chicagostreetsrp",
       },
     ],
   },
